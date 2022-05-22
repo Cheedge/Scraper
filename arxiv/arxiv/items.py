@@ -12,3 +12,4 @@ class ArxivItem(scrapy.Item):
     title = scrapy.Field()
     authors = scrapy.Field()
     abstraction = scrapy.Field()
+    download = scrapy.Field()
