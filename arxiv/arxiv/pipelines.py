@@ -10,7 +10,7 @@ import json
 
 class ArxivPipeline:
     def __init__(self) -> None:
-        self.f = open("/home/sharma/Desktop/DeepLearning/Scraper/arxiv/arxiv_python.json", "w")
+        self.f = open("/home/sharma/Desktop/DeepLearning/Scraper/arxiv/Arxiv_python.json", "w")
     def process_item(self, item, spider):
         content = json.dumps(dict(item))+"\n"
         self.f.write(content)
