@@ -64,6 +64,8 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'arxiv.pipelines.ArxivPipeline': 300,
+   # 'arxiv.pipelines.ArxivDownloadPipeline': 303
+   'arxiv.pipelines.ArxivMySQLPipeline': 301
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -86,3 +88,11 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+# database settings
+DB_HOST =  "127.0.0.1"
+DB_PORT = 3306
+DB_USER = "sharma"
+DB_PASSWD = "666666"
+# DB_NAME = 'ArxivPhysics'
